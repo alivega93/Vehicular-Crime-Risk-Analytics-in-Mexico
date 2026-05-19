@@ -94,6 +94,7 @@ A Looker Studio dashboard was developed including:
 ## Author
 
 Ali Vega
+
 Data Analytics • Cloud Computing
 
 ## Repository Structure

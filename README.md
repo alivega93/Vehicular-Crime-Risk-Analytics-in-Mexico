@@ -1,116 +1,209 @@
-# Vehicular Crime Risk Analytics in Mexico
+### 🚗 Vehicle Crime Risk Analytics for Insurance Pricing in Mexico
 
-End-to-end analytics project focused on vehicular crime analysis, risk classification and predictive modeling to support insurance pricing and territorial risk management decisions.
+## Overview
 
----
+This project analyzes vehicle-related crime incidents across Mexican municipalities and states to identify risk patterns, historical trends, and geographic hotspots that can support data-driven decision-making within the insurance industry.
+
+Using SQL Server, Python, Machine Learning, and Business Intelligence tools, public crime data was transformed into actionable insights for risk assessment, premium pricing strategies, and territory segmentation.
+
+⸻
 
 ## Business Problem
 
-Which municipalities and states in Mexico present the highest vehicular crime risk, and how can this information support insurance companies in defining competitive, data-driven and profitable pricing strategies?
+Insurance companies need accurate risk assessments to establish competitive and profitable premium pricing.
 
----
+Vehicle-related crime varies significantly across regions in Mexico, directly affecting claim probability and financial exposure. Understanding these geographic differences is essential for identifying high-risk areas, optimizing pricing strategies, and improving risk management processes.
 
-## Tech Stack
+Business Question
 
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- SQL Server
-- pyodbc
-- Looker Studio
-- Data Visualization
-- K-Means Clustering
-- Time Series Analysis
+Which states and municipalities present the highest vehicle crime risk, and how can this information support more effective insurance pricing and risk assessment strategies?
 
----
+⸻
 
-## Project Architecture
+## Project Objectives
 
-Open Data → SQL Server → Python Processing → Predictive Modeling → Risk Classification → Interactive Dashboard
+* Analyze vehicle-related crime incidents across Mexico.
+* Identify historical crime patterns and trends.
+* Classify states according to risk level.
+* Forecast future crime behavior.
+* Support insurance pricing and risk management decisions through data analytics.
 
-The project follows a complete analytics workflow including data acquisition, cleaning, transformation, exploratory analysis, predictive modeling, clustering and business dashboarding.
+⸻
 
----
+## Data Source
+
+Source: National Public Security System (SESNSP)
+
+Coverage
+
+* 32 Mexican states
+* 2,469 municipalities
+* Historical records from 2015 to 2021
+* Vehicle-related crime incidents
+
+Format
+
+* CSV files
+* UTF-8 encoding
+* Open government data
+
+⸻
+
+## Tools & Technologies
+
+* SQL Server
+* Python
+* Pandas
+* NumPy
+* PyODBC
+* Scikit-Learn
+* Matplotlib
+* Looker Studio
+* Git & GitHub
+
+⸻
 
 ## Methodology
 
-### 1. Data Acquisition
+1. Data Storage & Management
 
-Official open data from Mexico’s National Public Security System (*SESNSP) was used to analyze vehicular crime incidence between **2015–2021*.
+SQL Server was used to store and organize municipal crime data, enabling efficient querying and integration with analytical tools.
 
-### 2. SQL Database Design
+2. Data Extraction
 
-SQL Server was used to:
+Python and PyODBC were used to establish a connection with SQL Server and retrieve the required information for analysis.
 
-- store municipal crime records
-- organize analytical datasets
-- create tables and analytical views
-- support downstream querying and reporting
+3. Data Cleaning & Transformation
 
-### 3. Python Data Cleaning & Transformation
+Data preparation included:
 
-Python and Pandas were used to:
+* Null value validation
+* Duplicate removal
+* Data type optimization
+* Variable standardization
 
-- validate data types
-- handle null values
-- remove duplicates
-- optimize data formats
-- prepare analytical datasets
+4. Exploratory Data Analysis (EDA)
 
-### 4. Exploratory Data Analysis (EDA)
+Historical crime patterns were analyzed to identify trends, geographic concentrations, and behavioral insights.
 
-EDA techniques were applied to analyze:
+5. Time Series Analysis
 
-- state-level crime concentration
-- municipal behavior
-- temporal patterns
-- geographic distribution
-- top crime categories
+Vehicle crime evolution between 2015 and 2021 was examined to detect significant changes and long-term patterns.
 
-### 5. Time Series Analysis
+6. Predictive Modeling
 
-Time series analysis was performed to evaluate:
+A Linear Regression model was developed to estimate vehicle crime incidence for 2022.
 
-- historical crime evolution
-- temporal behavior
-- trend identification across years
+7. Risk Segmentation
 
-### 6. Machine Learning — Prediction Model
+The K-Means clustering algorithm was implemented to classify states into three categories:
 
-A *Linear Regression* model was implemented to estimate vehicular crime levels for *2022* using historical behavioral trends.
+* High Risk
+* Medium Risk
+* Low Risk
 
-### 7. Risk Classification — K-Means Clustering
+⸻
 
-K-Means clustering was used to classify Mexican states into risk groups:
+## Key Findings
 
-- High Risk
-- Medium Risk
-- Low Risk
+Highest Crime Incidence
 
-This segmentation supports insurance pricing strategies and territorial risk evaluation.
+The State of Mexico and Mexico City recorded the highest concentration of vehicle-related crimes during the analyzed period.
 
-### 8. Interactive Dashboard
+Historical Trend
 
-A Looker Studio dashboard was developed including:
+Vehicle crime incidents showed continuous growth between 2015 and 2019, followed by a decline in 2020 and a partial recovery in 2021.
 
-- dynamic filters
-- geographic maps
-- crime evolution tracking
-- comparative analysis
-- decision-support visualization
+Risk Classification
 
----
+K-Means clustering successfully segmented states according to their crime exposure levels, facilitating geographic risk assessment.
 
-## Key Insights
+2022 Forecast
 
-- Crime incidence varies significantly across Mexican states.
-- Geographic segmentation improves territorial risk understanding.
-- Historical patterns enable predictive estimation of future behavior.
-- Clustering techniques support insurance pricing strategies.
-- Interactive dashboards facilitate strategic monitoring and analytical decision-making.
+The predictive model estimated approximately 242,000 vehicle-related crimes for 2022 under the continuation of historical trends.
 
----
+Geographic Insights
+
+Interactive dashboards and risk maps revealed regional crime concentration patterns and high-risk territories.
+
+⸻
+
+## Dashboard & Visualizations
+
+<h2>Executive Dashboard</h2>
+
+<img src="images/executive-dashboard.png" width="900">
+
+<h2>State Risk Classification</h2>
+
+<img src="images/state-risk-classification.png" width="900">
+
+<h2>Vehicle Crime Risk Map</h2>
+
+<img src="images/vehicle-crime-risk-map.png" width="900">
+⸻
+
+## Business Impact
+
+The insights generated by this project can support:
+
+* Improved insurance risk assessment.
+* More accurate premium pricing strategies.
+* Identification of high-exposure territories.
+* Better resource allocation.
+* Data-driven decision-making.
+* Preventive actions focused on high-risk areas.
+
+⸻
+
+## Project Limitations
+
+* The analysis is based on historical information available through 2021.
+* The predictive model uses Linear Regression and could be enhanced with more advanced forecasting techniques.
+* Socioeconomic, mobility, and population density variables were not included.
+* Results depend on the quality and completeness of publicly available records.
+* The model provides risk estimation support but does not replace actuarial models used by insurance companies.
+
+⸻
+
+## Lessons Learned
+
+Throughout this project, I strengthened my skills in:
+
+* SQL Server database management.
+* Data extraction and transformation using Python.
+* Large-scale data cleaning and preparation.
+* Predictive analytics fundamentals.
+* Clustering techniques for risk segmentation.
+* Business-oriented dashboard development.
+* Translating analytical results into strategic recommendations.
+
+⸻
+
+## Challenges
+
+* Integrating multi-year data from thousands of municipalities.
+* Standardizing information to ensure analytical consistency.
+* Connecting SQL Server, Python, and Looker Studio within a unified workflow.
+* Interpreting results from a business perspective rather than solely a technical one.
+
+⸻
+
+## Recommendations
+
+* Adjust insurance premiums based on regional risk exposure.
+* Continuously monitor vehicle crime trends.
+* Develop preventive strategies for high-risk areas.
+* Incorporate socioeconomic and mobility variables into future models.
+* Implement more advanced forecasting techniques to improve predictive accuracy.
+
+⸻
+
+## Conclusion
+
+This project demonstrates how data analytics can transform public information into strategic decision-making tools. By combining SQL Server, Python, Machine Learning, and Business Intelligence, it was possible to identify risk patterns, segment territories, and generate actionable insights that support insurance pricing and risk management strategies.
+
+⸻
 
 ## Author
 
@@ -126,4 +219,8 @@ vehicular-crime-risk-analytics-mexico
 ├── README.md
 └── report
     └── Vehicular Crime Risk Analytics in Mexico.pdf
+└── images
+    ├── executive-dashboard.png
+    ├── state-risk-classification.png
+    └── vehicle-crime-risk-map.png
 ```

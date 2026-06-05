@@ -132,15 +132,15 @@ Interactive dashboards and risk maps revealed regional crime concentration patte
 
 <h2>Executive Dashboard</h2>
 
-<img src="images/executive-dashboard.png" width="900">
+<img src="Images/executive-dashboard.png" width="900">
 
 <h2>State Risk Classification</h2>
 
-<img src="images/state-risk-classification.png" width="900">
+<img src="Images/state-risk-classification.png" width="900">
 
 <h2>Vehicle Crime Risk Map</h2>
 
-<img src="images/vehicle-crime-risk-map.png" width="900">
+<img src="Images/vehicle-crime-risk-map.png" width="900">
 ⸻
 
 ## Business Impact
@@ -219,7 +219,7 @@ vehicular-crime-risk-analytics-mexico
 ├── README.md
 └── report
     └── Vehicular Crime Risk Analytics in Mexico.pdf
-└── images
+└── Images
     ├── executive-dashboard.png
     ├── state-risk-classification.png
     └── vehicle-crime-risk-map.png

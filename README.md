@@ -232,6 +232,3 @@ vehicular-crime-risk-analytics-mexico
     ├── state-risk-classification.png
     └── vehicle-crime-risk-map.png
 ```
-
-
-This project demonstrates how data analytics can transform public information into strategic decision-making tools. By combining SQL Server, Python, Machine Learning, and Business Intelligence, it was possible to identify risk patterns, segment territories, and generate actionable insights that support insurance pricing and risk management strategies.
